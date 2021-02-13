@@ -9,7 +9,7 @@ import {
 
   export default function AlbumDetail(props) {
    
-  const [activeAlbum, setActiveAlbum] = useState([])
+  const [activeAlbum, setActiveAlbum] = useState({})
   console.log(activeAlbum)
   useEffect(() => {
     fetch(`http://localhost:3001/albums/${props.match.params.id}`)
@@ -21,8 +21,9 @@ import {
   }, [])
   return (
     <div>
-        {/* <ul>
-           {activeAlbum.map(album => <li key={album.id}> <img  src={album.thumbnail} alt="Logo" /> {album.name} </li>)}
-        </ul> */}
+        <ul>
+
+           {activeAlbum.photos ? activeAlbum.photos.map(album => <li key={album.id}> <img  src={album.thumbnail} alt="Logo" /> {album.name} </li>): null}
+        </ul>
     </div>
   )}

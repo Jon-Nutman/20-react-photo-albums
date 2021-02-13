@@ -21,7 +21,7 @@ export default function Album(props) {
   return (
     <div>
         <ul>
-           <Link to={`/detail/${albums.id}`}>{albums.map(album => <li key={album.id}> <img  src={album.thumbnail} alt="Logo" /> {album.name} </li>)}</Link>
+           {albums.map(album => <li key={album.id}> <Link to={`/detail/${album.id}`}> <img  src={album.thumbnail} alt="Logo" /> {album.name}</Link> </li>)}
         </ul>
     </div>
   )}
