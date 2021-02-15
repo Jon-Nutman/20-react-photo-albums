@@ -11,13 +11,13 @@ export default function AlbumDetail(props) {
         console.log("data", data)
         setActiveAlbum(data)
       })
-  }, [])
+  }, [props.match.url])
   const [albums, setAlbums] = useState([])
   useEffect(() => {
-    fetch("http://localhost:3001/albums")
+    fetch(`http://localhost:3001/albums`)
       .then((resp) => resp.json())
       .then((data) => {
-        console.log("data", data)
+        console.log(props.match.url)
         setAlbums(data)
       })
   }, [])
