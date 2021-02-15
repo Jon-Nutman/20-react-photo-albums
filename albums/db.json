@@ -2,29 +2,119 @@
   "albums": [
       {
           "id": 1,
-          "name": "Album 1",
+          "name": "Nick Cage",
           "thumbnail": "https://www.placecage.com/c/200/300",
           "photos": [
               {
-                  "name": "photo 1",
+                  "name": "Nick 1",
                   "thumbnail": "https://www.placecage.com/c/200/300"
               },
               {
-                  "name": "photo 2",
-                  "thumbnail": "https://media.istockphoto.com/photos/chartreux-cat-16-months-old-standing-in-front-of-white-background-picture-id1184426245?s=612x612"
-              }
+                  "name": "Nick 2",
+                  "thumbnail": "https://www.placecage.com/c/200/300"
+              },
+              {
+                "name": "Nick 3",
+                "thumbnail": "https://www.placecage.com/c/200/300"
+            }
           ]
       },
       {
           "id": 2,
-          "name": "Album 2",
-          "thumbnail": "https://www.placecage.com/c/200/300",
+          "name": "Kit-Kat",
+          "thumbnail": "http://placekitten.com/200/300",
           "photos": [
               {
-                  "name": "photo other thing...",
-                  "thumbnail": "https://www.placecage.com/c/200/300"
-              }
+                  "name": "kitty 1",
+                  "thumbnail": "http://placekitten.com/200/300"
+              },
+              {
+                "name": "kitty 2",
+                "thumbnail": "http://placekitten.com/200/300"
+            },
+            {
+                "name": "kitty 3",
+                "thumbnail": "http://placekitten.com/200/300"
+            }
           ]
-      }
+      },
+      {
+        "id": 3,
+        "name": "Girzzly",
+        "thumbnail": "https://placebear.com/200/300",
+        "photos": [
+            {
+                "name": "bear 1",
+                "thumbnail": "https://placebear.com/200/300"
+            },
+            {
+                "name": "bear 2",
+                "thumbnail": "https://placebear.com/200/300"
+            },
+            {
+                "name": "bear 2",
+                "thumbnail": "https://placebear.com/200/300"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Doge",
+        "thumbnail": "https://placedog.net/200/300",
+        "photos": [
+            {
+                "name": "doge 1",
+                "thumbnail": "https://placedog.net/200/300"
+            },
+            {
+                "name": "doge 2",
+                "thumbnail": "https://placedog.net/200/300"
+            },
+            {
+                "name": "doge 3",
+                "thumbnail": "https://placedog.net/200/300"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Bacon Me Crazy",
+        "thumbnail": "https://baconmockup.com/200/300",
+        "photos": [
+            {
+                "name": "bacon",
+                "thumbnail": "https://baconmockup.com/200/300"
+            },
+            {
+                "name": "more bacon",
+                "thumbnail": "https://baconmockup.com/200/300"
+            },
+            {
+                "name": "more, more bacon",
+                "thumbnail": "https://baconmockup.com/200/300"
+            }
+        ]
+    },
+    {
+      "id": 6,
+      "name": "Beards",
+      "thumbnail": "https://placebeard.it/200x300",
+      "photos": [
+          {
+              "name": "Beard 1",
+              "thumbnail": "https://placebeard.it/200x300"
+          },
+          {
+              "name": "Beard 2",
+              "thumbnail": "https://placebeard.it/200x300"
+          },
+          {
+            "name": "Beard 2",
+            "thumbnail": "https://placebeard.it/200x300"
+        }
+      ]
+  }
+
+      
   ]
 }
