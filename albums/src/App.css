@@ -37,17 +37,31 @@ grid-gap: 30px;
 ALBUM DETAILS */
 
 .album-detail-container{
-  display: flex;
-
+display: flex;
+justify-content:center;
 }
 
 .album-nav-side{
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-padding-left: 10px;
-padding-right: 10px;
-margin-right: 15%;
 border-right: solid black 1px;
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+padding: 10px 10px 10px 10px;
 }
 
+.photos-container{
+display: flex;
+justify-content:center;
+margin-top: 50px;
+padding-bottom: 200px;
+flex-flow: row wrap;
+
+}
+
+.photo-card{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 30%;
+}

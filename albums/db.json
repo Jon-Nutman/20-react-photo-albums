@@ -16,7 +16,19 @@
               {
                 "name": "Nick 3",
                 "thumbnail": "https://www.placecage.com/c/200/300"
-            }
+            },
+            {
+                "name": "Nick 4",
+                "thumbnail": "https://www.placecage.com/c/200/300"
+            },
+            {
+                "name": "Nick 5",
+                "thumbnail": "https://www.placecage.com/c/200/300"
+            },
+            {
+              "name": "Nick 6",
+              "thumbnail": "https://www.placecage.com/c/200/300"
+          }
           ]
       },
       {
@@ -35,7 +47,19 @@
             {
                 "name": "kitty 3",
                 "thumbnail": "http://placekitten.com/200/300"
-            }
+            },
+            {
+                "name": "kitty 4",
+                "thumbnail": "http://placekitten.com/200/300"
+            },
+            {
+              "name": "kitty 5",
+              "thumbnail": "http://placekitten.com/200/300"
+          },
+          {
+              "name": "kitty 6",
+              "thumbnail": "http://placekitten.com/200/300"
+          }
           ]
       },
       {
@@ -53,6 +77,18 @@
             },
             {
                 "name": "bear 2",
+                "thumbnail": "https://placebear.com/200/300"
+            },
+            {
+                "name": "bear 4",
+                "thumbnail": "https://placebear.com/200/300"
+            },
+            {
+                "name": "bear 5",
+                "thumbnail": "https://placebear.com/200/300"
+            },
+            {
+                "name": "bear 6",
                 "thumbnail": "https://placebear.com/200/300"
             }
         ]
@@ -73,6 +109,18 @@
             {
                 "name": "doge 3",
                 "thumbnail": "https://placedog.net/200/300"
+            },
+            {
+                "name": "doge 4",
+                "thumbnail": "https://placedog.net/200/300"
+            },
+            {
+                "name": "doge 5",
+                "thumbnail": "https://placedog.net/200/300"
+            },
+            {
+                "name": "doge 6",
+                "thumbnail": "https://placedog.net/200/300"
             }
         ]
     },
@@ -81,6 +129,18 @@
         "name": "Bacon Me Crazy",
         "thumbnail": "https://baconmockup.com/200/300",
         "photos": [
+            {
+                "name": "bacon",
+                "thumbnail": "https://baconmockup.com/200/300"
+            },
+            {
+                "name": "more bacon",
+                "thumbnail": "https://baconmockup.com/200/300"
+            },
+            {
+                "name": "more, more bacon",
+                "thumbnail": "https://baconmockup.com/200/300"
+            },
             {
                 "name": "bacon",
                 "thumbnail": "https://baconmockup.com/200/300"
@@ -109,9 +169,21 @@
               "thumbnail": "https://placebeard.it/200x300"
           },
           {
-            "name": "Beard 2",
+            "name": "Beard 3",
             "thumbnail": "https://placebeard.it/200x300"
-        }
+        },
+        {
+            "name": "Beard 4",
+            "thumbnail": "https://placebeard.it/200x300"
+        },
+        {
+            "name": "Beard 5",
+            "thumbnail": "https://placebeard.it/200x300"
+        },
+        {
+          "name": "Beard 6",
+          "thumbnail": "https://placebeard.it/200x300"
+      }
       ]
   }
 

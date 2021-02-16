@@ -3,12 +3,10 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 
 export default function AlbumDetail(props) {
   const [activeAlbum, setActiveAlbum] = useState({})
-  console.log(activeAlbum)
   useEffect(() => {
     fetch(`http://localhost:3001/albums/${props.match.params.id}`)
       .then((resp) => resp.json())
       .then((data) => {
-        console.log("data", data)
         setActiveAlbum(data)
       })
   }, [props.match.url])
@@ -17,28 +15,35 @@ export default function AlbumDetail(props) {
     fetch(`http://localhost:3001/albums`)
       .then((resp) => resp.json())
       .then((data) => {
-        console.log(props.match.url)
         setAlbums(data)
       })
   }, [])
 
   return (
-    <div className='album-detail-container'><ul className='album-nav-side'>
+   
+    <div className='album-detail-container' >
+      <div className='album-nav-side'>
       {albums.map((album) => (<div>
-        <li className="album-detail-side-list-item"><Link  to={`/detail/${album.id}`} ><span>{album.name}</span></Link></li>
+        <div className="album-detail-side-list-item">
+          <Link  to={`/detail/${album.id}`} >
+            <span>{album.name}</span>
+          </Link>
+        </div>
       </div>
-
-      ))}  </ul>
-      <ul>
+))}  </div>
+     
+      <div className='photos-container'>
         {activeAlbum.photos
           ? activeAlbum.photos.map((photo) => (
-              <li key={photo.id}>
+              <div className="photo-card" key={photo.id}>
                 {" "}
-                <img src={photo.thumbnail} alt="Logo" /> {photo.name}{" "}
-              </li>
+               <Link  > <img src={photo.thumbnail} alt="Logo" /> {photo.name}{" "}</Link>
+              </div>
             ))
           : null}
-      </ul>
+      </div>
+      
     </div>
+    
   )
 }
