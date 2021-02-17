@@ -18,6 +18,23 @@ export default function AlbumDetail(props) {
         setAlbums(data)
       })
   }, [])
+  const [popUp, setPopUp] = useState([])
+  useEffect(() => {
+    fetch(`http://localhost:3001/albums/${props.match.params.id}`)
+      .then((resp) => resp.json())
+      .then((data) => {
+        console.log(data.thumbnail)
+        setPopUp(data.thumbnail)
+      })
+  }, [])
+  console.log(activeAlbum)
+
+  const modal = document.querySelector('.modal');
+  console.log(modal)
+
+  // function handleClick(){
+  //   onClick
+  // }
 
   return (
    
@@ -37,10 +54,24 @@ export default function AlbumDetail(props) {
           ? activeAlbum.photos.map((photo) => (
               <div className="photo-card" key={photo.id}>
                 {" "}
-               <Link  > <img src={photo.thumbnail} alt="Logo" /> {photo.name}{" "}</Link>
+               <Link onClick={() => modal.classList.add('open')} key={photo.id}> <img src={photo.thumbnail} alt="Logo"  /> {photo.name}{" "}</Link>
               </div>
             ))
           : null}
+      </div>
+
+      <div className='modal'  >
+            {/* {activeAlbum ?
+            activeAlbum.forEach(active =>{
+              active.addEventListener('click', () =>{
+                modal.classList.add('open')
+              } )
+            })
+          : null} */}
+
+
+        <img className='full-img' src='http://placekitten.com/200/300' alt='not found'/>
+        <p>photo name</p>
       </div>
       
     </div>
