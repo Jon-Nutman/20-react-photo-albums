@@ -24,7 +24,7 @@ export default function AlbumDetail(props) {
       .then((resp) => resp.json())
       .then((data) => {
         console.log(data.thumbnail)
-        setPopUp(data.thumbnail)
+        setPopUp(data)
       })
   }, [])
   console.log(activeAlbum)
@@ -35,7 +35,8 @@ export default function AlbumDetail(props) {
   // function handleClick(){
   //   onClick
   // }
-
+console.log(popUp.photos)
+console.log(popUp.name)
   return (
    
     <div className='album-detail-container' >
@@ -70,8 +71,8 @@ export default function AlbumDetail(props) {
           : null} */}
 
 
-        <img className='full-img' src='http://placekitten.com/200/300' alt='not found'/>
-        <p>photo name</p>
+        <img className='full-img' src={popUp.thumbnail} alt='not found'/>
+        <p>{popUp.name}</p>
       </div>
       
     </div>
